@@ -17,3 +17,7 @@ Installation Steps:
     locust --version
 
 For more details, visit: https://docs.locust.io/
+
+locust -f a.SingleUser.py
+locust -f b.tasksSequence.py --headless -u 100 -r 10 --run-time 1h --csv=results
+locust -f b.tasksSequence.py -u 100 -r 10 --run-time 10s
