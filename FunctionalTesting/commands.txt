@@ -1,0 +1,5 @@
+python -m venv funtest
+funtest\Scripts\Activate
+
+pip install selenium
+pip install pytest
