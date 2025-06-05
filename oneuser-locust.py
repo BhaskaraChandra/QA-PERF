@@ -20,7 +20,7 @@ class LoginUser(HttpUser):
         }
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": "https://qa-perf.onrender.com/"
+            "Referer": "http://127.0.0.1:8000/"
         }
 
         # Perform the POST login request

@@ -1,7 +1,7 @@
 from locust import HttpUser, TaskSet, task, between
 import time
 from bs4 import BeautifulSoup
-url = "http://localhost:9118/"
+url = "https://edupulse-qa.onrender.com/"
 
 class UserBehavior(TaskSet):
 
@@ -16,7 +16,7 @@ class UserBehavior(TaskSet):
     @task
     def sequence_of_tasks(self):
         self.login()
-        time.sleep(6)  
+        time.sleep(1)  
         #Other activities will come here.
         self.logout()
 
@@ -24,7 +24,8 @@ class UserBehavior(TaskSet):
         # Simulate login with a fake username
         payload = {
             "csrfmiddlewaretoken": self.csrf_token,
-            "username": f"tempuser{self.user.environment.runner.user_count}@temp1.com"
+            "username": f"sarthak@tiet.com"
+            "password": "a"  # Replace with actual password if needed
         }
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
