@@ -16,7 +16,7 @@ class LoginLogoutUser(HttpUser):
     credentials = [
         ("tempuser1@temp.com", ""),        # assumed valid user, empty password if accepted
         ("tempuser1@temp.com", "wrongpw"), # invalid password
-        ("invaliduser@example.com", "pw"), # invalid user
+        ("invaliduser@example.com", "fail"), # invalid user
     ]
 
     def on_start(self):
