@@ -1,14 +1,3 @@
-python -m venv funtest
-funtest\Scripts\Activate
+commands to run test Script
 
-pip install selenium
-pip install pytest
-
-To Download chrome webdriver extension
-    try the below --chrome://version/
-replace your version in the below, and download and unzip the file    
-https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.68/win64/chromedriver-win64.zip
-add the path to path environment variable
-
-command to run the test
- pytest .\a_loginText.py
+ pytest login-test-logout-flow.py -s

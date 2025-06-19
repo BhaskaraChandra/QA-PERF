@@ -15,7 +15,7 @@ PASSWORD = ""
 def driver():
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
-    options.add_argument("--headless=new")  # ✅ Modern headless mode
+    options.add_argument("--headless=new")  # ✅ Modern headless mode   👈 Comment this to see UI
     options.add_argument("--disable-gpu")   # (optional but recommended on Windows)
     options.add_argument("--window-size=1920,1080")  # ensures consistent layout rendering
 
