@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ----------------------- CONFIG -----------------------
-BASE_URL = "http://127.0.0.1:8000/"
+BASE_URL = "https://edupulse-qa.onrender.com/"
 
 # ----------------------- DRIVER SETUP -----------------------
 def create_driver():
@@ -53,7 +53,7 @@ def perform_logout(driver):
 def test_full_user_flow():
     driver = create_driver()
     try:
-        perform_login(driver, "tempuser1@temp.com", "a")
+        perform_login(driver, "sarthak@tiet.com", "a")
         
         # Menu navigation
         for label in ["Practice Test", "History", "My Score Board", "Manage My Topics", "My Profile"]:
